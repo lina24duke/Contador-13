@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Contador 13</title>
+    </head>
+        <style>
+            *{ 
+             margin: 0;
+             box-zising: border-box;  
+            }
+         body{
+            border: 0 solid red;
+            min-height: 100vh;
+            background: black;
+            color: white;
+            padding: 100 px;
+            text-align: center;
+            border-radius: 5px
+
+
+
+
+         }   
+        </style>
+    <body>
+        <h1>Contador 13</h1>
+        <p> 0</p>
+        <button onclick="diminuir()">Menos</button>
+        <button onclick="aumentar ()">Mais</button>
+
+     <script>
+        let numero = 0
+
+        function aumentar(){
+        numero = numero + 1
+        mostrarNaTela()
+                }
+        function diminuir() {   
+        numero = numero - 1
+        mostrarNaTela()
+       }
+       function mostrarNaTela() {   
+       const p = document.querySelector("p")
+       p.innertext = numero
+       mostrarNaTela ()
+          }
+
+       //iniciar
+       mostrarNaTela  
+    </script>  
+
+    </body>
+</html>
