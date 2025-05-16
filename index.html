@@ -23,32 +23,34 @@
 
          }   
         </style>
-    <body>
+     <body>
+        <section>
         <h1>Contador 13</h1>
-        <p> 0</p>
+        <p id= "resultado"></p>
         <button onclick="diminuir()">Menos</button>
         <button onclick="aumentar ()">Mais</button>
+         </section>
 
-     <script>
+        <script>
         let numero = 0
 
         function aumentar(){
         numero = numero + 1
         mostrarNaTela()
-                }
+        }
         function diminuir() {   
         numero = numero - 1
         mostrarNaTela()
        }
        function mostrarNaTela() {   
-       const p = document.querySelector("p")
-       p.innertext = numero
-       mostrarNaTela ()
-          }
-
+       const p = document.querySelector("#resultado")
+       
+       p.innerText = numero
+      }
+         
        //iniciar
        mostrarNaTela  
-    </script>  
+     </script>  
 
-    </body>
+</body>
 </html>
